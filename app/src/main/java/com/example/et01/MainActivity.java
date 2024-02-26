@@ -104,25 +104,25 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clicked4(View view) {
-        tV3.setVisibility(View.INVISIBLE);
-        tV4.setVisibility(View.INVISIBLE);
-        tV5.setVisibility(View.INVISIBLE);
-        tV6.setVisibility(View.INVISIBLE);
-        iV2.setVisibility(View.INVISIBLE);
-        iV3.setVisibility(View.INVISIBLE);
-        btn2.setVisibility(View.INVISIBLE);
-        btn3.setVisibility(View.INVISIBLE);
+        iV2.setImageResource(R.drawable.download);
+        iV3.setImageResource(R.drawable.download);
+        tV3.setText("");
+        tV4.setText("");
+        tV5.setText("");
+        tV6.setText("");
         eT1.setText("");
         eT2.setText("");
         eT3.setText("");
+        eT2.setVisibility(View.INVISIBLE);
+        eT3.setVisibility(View.INVISIBLE);
         iV1.setImageResource(R.drawable.download);
         btn4.setText("new game");
         count = 0;
         ahuz = 0;
         x = rnd.nextInt(90)+10;
         y = rnd.nextInt(90)+10;
-
         tV1.setText(String.valueOf(x));
         tV2.setText(String.valueOf(y));
+    
     }
 }
